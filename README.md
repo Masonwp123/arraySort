@@ -6,6 +6,7 @@ Sort an array using the 'bubble sort' algorithm
 **printValues**
 ```
   array is an array of any type, arraySize is integer
+  parameter arraySize should be equal to the amount of values in array
   function printValues (array, arraySize):
     print "[" 
     create integer variable i
