@@ -4,47 +4,55 @@ Sort an array using the 'bubble sort' algorithm
 ## Functions
 
 **printValues**
-  
-  `int* array`
-    the array that the function is printing
-  
-  `int arraySize`
-    the size of the input array
-  
-  * prints the first bracket to represent an array
-  * iterates through the array values and prints them
-  * prints the final bracket to close off the array
+```
+  array is an array of any type, arraySize is integer
+  function printValues (array, arraySize):
+    print "[" 
+    create integer variable i
+    for i from zero to arraySize - 1:
+      print " " + array[i]
+    print " ]"
+```
 
 **swap**
-  
-  `int* x`
-    the first value to swap, will become y
-  
-  `int* y`
-    the second value to swap, will become x
-  
-  * sets a local called tempX to x
-  * sets x to y
-  * sets y to tempX
+```
+  both x and y should be the same type
+  function swap (x, y):
+    tempX = x
+    x = y
+    y = tempX
+```
 
 **sort**
-  
-  `int* array`
-    the array the function is sorting
-  
-  `int arraySize`
-    the size of the input array
-  
-  * iterates through the array twice to cover all possible values
-  * sets local x and y to array values array + j and array + j + 1
-  * if x is greater than y, swap them and print the array
+```
+  array is an array of any type, arraySize is an integer
+  parameter arraySize should be equal to the amount of values in array
+  function sort (array, arraySize):
+    create integer variables i and j
+    for i from zero to arraySize - 1:
+      for j from zero to arraySize - 1:
+        if array[j] > array[j + 1]:
+          swap array[j] with array[j+1]
+          call printArray(array, arraySize)
+```
 
 **main**
-  
-  * creates local array values and integer valueSize
-  * valueSize is set to the memory size of values array divided by memory size of an integer
-  * prints initial array and it's values
-  * creates local x and y and tests swapping them
-  * calls 'sort' to sort through the array values
-  * prints the final result after 'sort' has been called
+```
+  function main ():
+    create integer[] array with any amount of values
+    create integer variable arraySize with the number of values in array
+    print "Before:"
+    call printValues(array, arraySize)
+
+    create integer variables x and y with different values
+    print x and y
+    swap x with y
+    print x and y
+
+    call sort(array, arraySize)
+
+    print "After:"
+    call printValues(array, valueSize)
+        
+```
 
