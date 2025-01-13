@@ -45,5 +45,5 @@ Sort an array using the 'bubble sort' algorithm
   * valueSize is set to the memory size of values array divided by memory size of an integer
   * prints initial array and it's values
   * creates local x and y and tests swapping them
-  * calls `sort` to sort through the array values
-  - prints the final result after `sort` has been called
+  * calls 'sort' to sort through the array values
+  - prints the final result after 'sort' has been called
