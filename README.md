@@ -5,10 +5,10 @@ Sort an array using the 'bubble sort' algorithm
 
 **printValues**
   
-  `int* values`
+  `int* array`
     the array that the function is printing
   
-  `int valueSize`
+  `int arraySize`
     the size of the input array
   
   * prints the first bracket to represent an array
@@ -29,10 +29,10 @@ Sort an array using the 'bubble sort' algorithm
 
 **sort**
   
-  `int* values`
+  `int* array`
     the array the function is sorting
   
-  `int valueSize`
+  `int arraySize`
     the size of the input array
   
   * iterates through the array twice to cover all possible values
