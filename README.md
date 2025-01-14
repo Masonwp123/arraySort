@@ -31,7 +31,7 @@ Sort an array using the 'bubble sort' algorithm
   function sort (array, arraySize):
     create integer variables i and j
     for i from zero to arraySize - 1:
-      for j from zero to arraySize - 1:
+      for j from zero to arraySize - i - 1:
         if array[j] > array[j + 1]:
           swap array[j] with array[j+1]
           call printArray(array, arraySize)
