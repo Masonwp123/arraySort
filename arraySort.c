@@ -35,8 +35,8 @@ void sort(int* array, int arraySize) {
 int main() {
   int values[] = {7, 3, 9, 4, 6, 1, 2, 8, 5};
   
-  //sizeof an array is # of values * memory amount of type
-  int valueSize = sizeof(values) / sizeof(int);
+  //sizeof an array is # of values * memory of a single value
+  int valueSize = sizeof(values) / sizeof(values[0]);
 
   //print initial values
   printf("Before: \n");
