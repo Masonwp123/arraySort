@@ -20,7 +20,9 @@ void swap(int* x, int* y) {
 //sort array using bubble sort algorithm
 //arraySize is input so array can be added to without hassle
 void sort(int* array, int arraySize) {
+	int counter = 0;
 	for (int i = 0; i < arraySize - 1; ++i) {
+		// - i halves iterations from original method
 		for (int j = 0; j < arraySize - i - 1; ++j) {
 			int* x = (array + j);
 			int* y = (array + j + 1);
@@ -28,8 +30,10 @@ void sort(int* array, int arraySize) {
 				swap(x,y);
 				printValues(array, arraySize);
 			}
+			counter++;
 		}
 	}
+	printf("Sort took %d iteration(s).\n", counter);
 }
 
 int main() {
