@@ -20,8 +20,8 @@ void swap(int* x, int* y) {
 //sort array using bubble sort algorithm
 //arraySize is input so array can be added to without hassle
 void sort(int* array, int arraySize) {
-  for (int i = 0; i < arraySize; ++i) {
-    for (int j = 0; j < arraySize; ++j) {
+  for (int i = 0; i < arraySize - 1; ++i) {
+    for (int j = 0; j < arraySize - i - 1; ++j) {
       int* x = (array + j);
       int* y = (array + j + 1);
       if (*x > *y) {
