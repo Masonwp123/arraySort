@@ -1,10 +1,9 @@
-# Ignore all
+# Ignore all files by default, but scan all directories
 *
-
-# Unignore files with extensions
-!*.*
-
-# Unignore directories
 !*/
 
-# The above combo ignore files without extensions, important for c files
+# C/C++ source files
+!*.c
+!*.cpp
+!*.h
+!*.hpp
