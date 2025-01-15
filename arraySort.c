@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <string.h>
 
 //iterate through the array and print it's values
 //can iterate through any size array with arraySize
 void printValues(int* array, int arraySize) {
 	printf("[");
-	for (int i = 0; i < arraySize; ++i) {
-		printf(" %d", *(array + i));
+	for (int* i = array; i < array + arraySize; ++i) {
+		printf(" %d", *i);
 	}
 	printf(" ] \n");
 }
@@ -23,11 +24,9 @@ void sort(int* array, int arraySize) {
 	int counter = 0;
 	for (int i = 0; i < arraySize - 1; ++i) {
 		// - i halves iterations from original method
-		for (int j = 0; j < arraySize - i - 1; ++j) {
-			int* x = (array + j);
-			int* y = (array + j + 1);
-			if (*x > *y) {
-				swap(x,y);
+		for (int* j = array; j < array + arraySize - i - 1; ++j) {
+			if (*j > *(j + 1)) {
+				swap(j,j + 1);
 				printValues(array, arraySize);
 			}
 			counter++;
