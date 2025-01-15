@@ -1,2 +1,10 @@
-arraySort
-arraySortpp
+# Ignore all
+*
+
+# Unignore files with extensions
+!*.*
+
+# Unignore directories
+!*/
+
+# The above combo ignore files without extensions, important for c files
