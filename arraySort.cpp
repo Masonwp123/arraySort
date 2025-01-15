@@ -11,7 +11,6 @@ void printValues(std::vector<int> array) {
 }
 
 //sort array using bubble sort algorithm
-//arraySize is input so array can be added to without hassle
 void sort(std::vector<int> array) {
 	int counter = 0;
 	for (int i = 0; i < array.size() - 1; ++i) {
