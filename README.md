@@ -10,14 +10,14 @@ Sort an array using the 'bubble sort' algorithm
   function printValues (array, arraySize):
     print "[" 
     create integer variable i
-    for i from zero to arraySize - 1:
+    for i from zero to arraySize:
       print " " + array[i]
     print " ]"
 ```
 
 **swap**
 ```
-  both x and y should be the same type
+  both x and y should be the same type and pass by ref
   function swap (x, y):
     tempX = x
     x = y
