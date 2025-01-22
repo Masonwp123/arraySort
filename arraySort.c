@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+const int MAX = 9;
+
 //iterate through the array and print it's values
 //can iterate through any size array with arraySize
 void printValues(int* array, int arraySize) {
@@ -36,13 +38,10 @@ void sort(int* array, int arraySize) {
 
 int main() {
 	int values[] = {7, 3, 9, 4, 6, 1, 2, 8, 5};
-	
-	//sizeof an array is # of values * memory of a single value
-	int valueSize = sizeof(values) / sizeof(values[0]);
-	
+
 	//print initial values
 	printf("Before: \n");
-	printValues(values, valueSize);
+	printValues(values, MAX);
 
 	// test swap
 	int x = 3;
@@ -52,7 +51,7 @@ int main() {
 	printf("x: %d, y: %d \n", x, y);
 
 	//sort values and print each iteration
-	sort(values, valueSize);
+	sort(values, MAX);
 
 	//print result
 	printf("After: \n");
