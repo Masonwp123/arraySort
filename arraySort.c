@@ -55,7 +55,7 @@ int main() {
 
 	//print result
 	printf("After: \n");
-	printValues(values, valueSize);
+	printValues(values, MAX);
 
 	return 0;
 } // end main
