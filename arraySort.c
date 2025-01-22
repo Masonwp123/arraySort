@@ -23,8 +23,7 @@ void swap(int* x, int* y) {
 void sort(int* array, int arraySize) {
 	int counter = 0;
 	for (int i = 0; i < arraySize - 1; ++i) {
-		// - i halves iterations from original method
-		for (int* j = array; j < array + arraySize - i - 1; ++j) {
+		for (int* j = array; j < array + arraySize - 1; ++j) {
 			if (*j > *(j + 1)) {
 				swap(j,j + 1);
 				printValues(array, arraySize);

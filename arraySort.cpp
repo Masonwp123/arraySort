@@ -14,8 +14,7 @@ void printValues(std::vector<int> array) {
 void sort(std::vector<int> array) {
 	int counter = 0;
 	for (int i = 0; i < array.size() - 1; ++i) {
-		// - i halves iterations from original method
-		for (int j = 0; j < array.size() - i - 1; ++j) {
+		for (int j = 0; j < array.size() - 1; ++j) {
 			int& x = array[j];
 			int& y = array[j + 1];
 			if (x > y) {
