@@ -2,7 +2,7 @@
 #include <vector>
 
 //iterate through the array and print it's values
-void printValues(std::vector<int> array) {
+void printValues(std::vector<int>& array) {
 	std::cout<<"[";
 	for (int i : array) {
 		std::cout<<" "<<i;
@@ -11,7 +11,7 @@ void printValues(std::vector<int> array) {
 }
 
 //sort array using bubble sort algorithm
-void sort(std::vector<int> array) {
+void sort(std::vector<int>& array) {
 	int counter = 0;
 	for (int i = 0; i < array.size() - 1; ++i) {
 		for (int j = 0; j < array.size() - 1; ++j) {
